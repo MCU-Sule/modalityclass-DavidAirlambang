@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane prefHeight="201.0" prefWidth="440.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pertemuan3.pertemuan3_modality.controller.DiskonController">
+   <children>
+      <VBox prefHeight="198.0" prefWidth="440.0" AnchorPane.leftAnchor="0.0">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+         </padding>
+         <children>
+            <TextField fx:id="valueDiscount" prefHeight="26.0" prefWidth="368.0" />
+            <TextFlow prefHeight="56.0" prefWidth="366.0" textAlignment="RIGHT">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tambah Diskon">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Text>
+               </children>
+            </TextFlow>
+            <Line endX="316.8929443359375" startX="-100.0" strokeWidth="2.0" style="-fx-stroke-dash-array: 5;" />
+            <TextFlow layoutX="20.0" layoutY="46.0" prefHeight="27.0" prefWidth="419.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Jumlah Diskon">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="20.0" />
+               </VBox.margin>
+            </TextFlow>
+            <Button fx:id="tambahDiscount" mnemonicParsing="false" onAction="#tambahDiscount" prefHeight="33.0" prefWidth="419.0" text="Tambah Diskon" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

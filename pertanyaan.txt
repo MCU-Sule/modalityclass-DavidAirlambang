@@ -1,0 +1,8 @@
+- how to prevent null from closing window
+- how to know if a modal succeed or fail
+- how do we sort listview by name
+- how do we sort listview by price
+- how to show sub menu (context menu) on right click on list view
+- how to delete data from right click menu
+- if you want user to be able to order from menu what file needed
+to be modified /added (explain those file) ?
