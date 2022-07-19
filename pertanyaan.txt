@@ -1,8 +1,22 @@
 - how to prevent null from closing window
-- how to know if a modal succeed or fail
-- how do we sort listview by name
-- how do we sort listview by price
+	-> menggunakan if null
+
+- how to know if a modal succeed or fail(?)
+	->jika sukses modal bekerja
+
+- how do we sort listview by name(??)
+	->Menggunakan comparator
+
+- how do we sort listview by price(??)
+	->Menggunakan comparator
+
 - how to show sub menu (context menu) on right click on list view
+	->Menggunakan context menu
+
 - how to delete data from right click menu
+	->Menambah on action di context menu
+
 - if you want user to be able to order from menu what file needed
 to be modified /added (explain those file) ?
+	-> class baru Order untuk mencatat orderan, fxml baru untuk menampilkan orderan, controller untuk order, 
+	   context menu untuk click kanan order

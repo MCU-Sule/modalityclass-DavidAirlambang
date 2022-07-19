@@ -45,16 +45,13 @@ public class AddController {
         float potongan = 0.0F;
         String nama = namaMenu.getText();
         float harga = Float.parseFloat((hargaMenu.getText()));
-            if(custom.getText() == null) {
+            if(discount.getValue() != null) {
                 potongan = (float) discount.getValue();
             } else {
                 potongan = Float.parseFloat(custom.getText());
             }
         home.getMakanan().add(new Coffee(nama, harga, potongan));
         addMenu.getScene().getWindow().hide();
-        System.out.println(potongan);
-        System.out.println(harga);
-        System.out.println(custom.getText());
     }
 
     public void addCustom(ActionEvent actionEvent) throws IOException {

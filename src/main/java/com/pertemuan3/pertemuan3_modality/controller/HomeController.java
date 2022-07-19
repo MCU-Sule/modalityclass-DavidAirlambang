@@ -9,6 +9,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
+import javafx.scene.control.MenuItem;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
@@ -17,6 +18,7 @@ import java.util.Comparator;
 
 public class HomeController {
 
+    public MenuItem delMenu;
     private Stage stage;
     public ListView menuList;
     public Button addButton;
@@ -50,5 +52,10 @@ public class HomeController {
 
         stage.setScene(scene);
         stage.show();
+    }
+
+    public void delMenu(ActionEvent actionEvent) {
+        makanan.remove(menuList.getSelectionModel().getSelectedItem());
+        menuList.refresh();
     }
 }

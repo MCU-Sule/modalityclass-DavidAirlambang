@@ -65,7 +65,7 @@
                         </Label>
                         <HBox prefHeight="30.0" prefWidth="386.0">
                            <children>
-                              <ComboBox fx:id="discount" prefHeight="44.0" prefWidth="202.0" promptText="0.0" />
+                              <ComboBox fx:id="discount" prefHeight="44.0" prefWidth="202.0" promptText="pilih discount" />
                               <Button fx:id="custom" mnemonicParsing="false" onAction="#addCustom" prefHeight="41.0" prefWidth="166.0" text="Custom Discount">
                                  <HBox.margin>
                                     <Insets left="20.0" />

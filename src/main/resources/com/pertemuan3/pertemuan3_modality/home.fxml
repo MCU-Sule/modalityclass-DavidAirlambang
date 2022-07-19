@@ -2,7 +2,9 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ContextMenu?>
 <?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Line?>
@@ -41,7 +43,14 @@
          </children>
       </VBox>
       <Line endX="710.199951171875" layoutX="101.0" layoutY="92.0" startX="-92.20001220703125" strokeWidth="2.0" style="-fx-stroke-dash-array: 5;" />
-      <ListView fx:id="menuList" layoutX="8.0" layoutY="102.0" prefHeight="394.0" prefWidth="804.0" />
+      <ListView fx:id="menuList" layoutX="8.0" layoutY="102.0" prefHeight="394.0" prefWidth="804.0">
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                <MenuItem fx:id="delMenu" onAction="#delMenu" mnemonicParsing="false" text="Hapus Menu" />
+              </items>
+            </ContextMenu>
+         </contextMenu></ListView>
       <Button fx:id="addButton" layoutX="8.0" layoutY="508.0" mnemonicParsing="false" onAction="#add" prefHeight="32.0" prefWidth="804.0" text="Add To My Menu" />
    </children>
 </AnchorPane>
